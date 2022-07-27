@@ -65,5 +65,9 @@ Para criar uma lista não ordenada, adicione traços ( -), asteriscos ( *), ou s
 >**Iniciando itens de lista não ordenados com números**
 >Se você precisar iniciar um item de lista não ordenado com um número seguido por um ponto, você pode usar uma barra invertida ( \\) para escapar do período.
 
-commit 1
-commit 2
+<h3>Rebase Iterativo</h3>
+
+Neste cenário a branch **dev** Irá conter 2 commits a mais que a branch **TESTE-REBASE-ITERATIVO**, então utiliza-se o rebase para colocar essa branch no topo da Dev
+><code>git rebase -i</code> abre um arquivo contendo todos os commit feitos na branch
+>
+><code>git rebase -i HEAD~2</code> Abre um arquivo para editar os ultimos dois commits da branch
