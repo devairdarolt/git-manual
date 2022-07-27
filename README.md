@@ -1,5 +1,22 @@
 # Uma introdução ao Git e ao GitHub
 
+<h4>Markdown</h4>
+
+<h5>Listas ordenadas</h5>
+Para criar uma lista ordenada, adicione itens de linha com números seguidos por pontos. Os números não precisam estar em ordem numérica, mas a lista deve começar com o número um.
+<p align="center">
+    <img src="img/4.png" alt="Linhas temporais" style="zoom:100%;" />
+</p>
+
+<h5>Listas não ordenadas</h5>
+Para criar uma lista não ordenada, adicione traços ( -), asteriscos ( *), ou sinais de adição ( +) na frente dos itens de linha. Recue um ou mais itens para criar uma lista aninhada.
+<p align="center">
+    <img src="img/5.png" alt="Linhas temporais" style="zoom:100%;" />
+</p>
+
+>**Iniciando itens de lista não ordenados com números**
+>Se você precisar iniciar um item de lista não ordenado com um número seguido por um ponto, você pode usar uma barra invertida ( \\) para escapar do período.
+
 Um tutorial passo a passo para o git e o GitHub.
 
 <h3>Etapa 1. Crie o repositório</h3>
@@ -48,26 +65,11 @@ Isso move toda a **branch feature**  para começar na ponta do **main branch**, 
 
 O principal benefício do **rebase** é que você obtém um histórico de projeto muito mais limpo. Primeiro, ele elimina os commits de mesclagem desnecessários exigidos pelo git **merge**. Segundo, como você pode ver no diagrama acima, o **rebase** também resulta em um histórico de projeto perfeitamente linear - você pode seguir a dica de feature todo o caminho até o início do projeto sem quaisquer bifurcações. Isso facilita a navegação em seu projeto com comandos como **git log**, **git bisect**, e **gitk**.
 
-<h4>Markdown</h4>
-
-<h5>Listas ordenadas</h5>
-Para criar uma lista ordenada, adicione itens de linha com números seguidos por pontos. Os números não precisam estar em ordem numérica, mas a lista deve começar com o número um.
-<p align="center">
-    <img src="img/4.png" alt="Linhas temporais" style="zoom:100%;" />
-</p>
-
-<h5>Listas não ordenadas</h5>
-Para criar uma lista não ordenada, adicione traços ( -), asteriscos ( *), ou sinais de adição ( +) na frente dos itens de linha. Recue um ou mais itens para criar uma lista aninhada.
-<p align="center">
-    <img src="img/5.png" alt="Linhas temporais" style="zoom:100%;" />
-</p>
-
->**Iniciando itens de lista não ordenados com números**
->Se você precisar iniciar um item de lista não ordenado com um número seguido por um ponto, você pode usar uma barra invertida ( \\) para escapar do período.
-
 <h3>Rebase Iterativo</h3>
 
 Neste cenário a branch **dev** Irá conter 2 commits a mais que a branch **TESTE-REBASE-ITERATIVO**, então utiliza-se o rebase para colocar essa branch no topo da Dev
 ><code>git rebase -i</code> abre um arquivo contendo todos os commit feitos na branch
 >
 ><code>git rebase -i HEAD~2</code> Abre um arquivo para editar os ultimos dois commits da branch
+
+Exemplo:
