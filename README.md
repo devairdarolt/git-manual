@@ -67,10 +67,28 @@ O principal benefício do **rebase** é que você obtém um histórico de projet
 
 <h3>Rebase Iterativo</h3>
 
-Neste cenário a branch **dev** Irá conter 2 commits a mais que a branch **TESTE-REBASE-ITERATIVO**, então utiliza-se o rebase para colocar essa branch no topo da Dev
-><code>git rebase -i</code> abre um arquivo contendo todos os commit feitos na branch
+>Assim o log ficará da seguinte forma:
+
+<p align="center">
+    <img src="img/9.png" alt="Linhas temporais" style="zoom:100%;" />
+</p>
+
+> Observando o status é possível ver sa próxima execução <code>pick xxxx commit 4</code> e <code>pick xxxx commit 5</code>
+
+<p align="center">
+    <img src="img/10.png" alt="Linhas temporais" style="zoom:100%;" />
+</p>
+
+>Após finalizar a alteração é possível realizar <code>git rebase --continue</code> para prosseguir com os próximos comandos.
 >
 ><code>git rebase -i HEAD~2</code> Abre um arquivo para editar os ultimos dois commits da branch
 
-Exemplo:
-commit 8
+>Ao finalizar o log ficará da seguinte forma com o commit 3 alterado:
+
+<p align="center">
+    <img src="img/11.png" alt="Linhas temporais" style="zoom:100%;" />
+</p>
+
+> Essa alteração foi feita apenas na mensagem do commit mas poderia ser uma correção no próprio código
+
+<h3>Consolidando tudo em um único commit no topo da dev:</h3>
