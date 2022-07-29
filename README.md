@@ -73,3 +73,4 @@ Neste cenário a branch **dev** Irá conter 2 commits a mais que a branch **TEST
 ><code>git rebase -i HEAD~2</code> Abre um arquivo para editar os ultimos dois commits da branch
 
 Exemplo:
+commit 1
