@@ -35,7 +35,7 @@ Considere o que acontece quando você começa a trabalhar em um novo recurso em 
 </p>
 Agora, digamos que os novos commits em *main* são relevantes para o recurso em que você está trabalhando. Para incorporar os novos commits em seu **feature branch**, você tem duas opções: mesclar ou rebase.
 
-<h4>Merge</h4>
+<h4>Merge </h4>
 
 A opção mais fácil é o **merge** da branch main para a ramificação de feature usando algo como o seguinte:
 >git checkout feature
@@ -52,7 +52,7 @@ Merge é bom porque é uma ação não destrutiva. As ramificações existentes 
 
 Por outro lado, isso também significa que a feature branch terá um commit de merge estranho toda vez que você precisar incorporar mudanças upstream. Se main é muito ativo, isso pode poluir um pouco o histórico do seu branch de recursos. Embora seja possível mitigar esse problema com recursos avançados **git log** opções, pode dificultar a compreensão da história do projeto por outros desenvolvedores.
 
-<h4>Rebase</h4>
+<h4>Rebase </h4>
 
 Como alternativa ao merge, você pode usar o **rebase** da branch feature  para **main branch** usando os seguintes comandos:
 >git checkout feature
@@ -73,3 +73,4 @@ Neste cenário a branch **dev** Irá conter 2 commits a mais que a branch **TEST
 ><code>git rebase -i HEAD~2</code> Abre um arquivo para editar os ultimos dois commits da branch
 
 Exemplo:
+commit 8
