@@ -35,7 +35,7 @@ Considere o que acontece quando você começa a trabalhar em um novo recurso em 
 </p>
 Agora, digamos que os novos commits em *main* são relevantes para o recurso em que você está trabalhando. Para incorporar os novos commits em seu **feature branch**, você tem duas opções: mesclar ou rebase.
 
-<h4>Merge</h4>
+<h4>Merge </h4>
 
 A opção mais fácil é o **merge** da branch main para a ramificação de feature usando algo como o seguinte:
 >git checkout feature
