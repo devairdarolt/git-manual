@@ -44,7 +44,7 @@ Inicialmente, o repositório que você criar no Bitbucket ficará vazio sem nenh
 </br>
 
 ><code>git remote add origin <https://github.com/devairdarolt/devairdarolt.git></code><br>
-><code>git branch -M master<code><br>
+><code>git branch -M master</code><br>
 ><code>git push -u origin master</code>
 
 </br>
