@@ -74,8 +74,9 @@ Considere o que acontece quando você começa a trabalhar em um novo recurso em 
 <p align="center">
     <img src="./img/1.png"  style="height:300px;" />
 </p>
+
 <br><br>
-A imagem ilustra em <span style="color:lightblue;">azul</span> as atualizações da <span style="color:lightblue;">main</span>, enquanto em <span style="color:lightgreen;">verde</span> os commits de atualizações de <span style="color:lightgreen;">feature</span>. Como a branch main é a branch que todos os desenvolvedores irão se basear, sempre antes de fazer um pull-request é importante  fazer um merge/rebase para garantir que a feature esta usando os códigos mais atuais da main.
+A imagem ilustra em <b style="color:#08b7f0;">azul</b> as atualizações da <span style="color:#08b7f0;">main</span>, enquanto em <span style="color:#08f01a;">verde</span> os commits de atualizações de <span style="color:#08f01a;">feature</span>. Como a branch main é a branch que todos os desenvolvedores irão se basear, sempre antes de fazer um pull-request é importante  fazer um merge/rebase para garantir que a feature esta usando os códigos mais atuais da main.
 
 <br>
 <h3><b>Merge</b></h3>
@@ -85,7 +86,7 @@ A opção mais fácil é o **merge** da branch main para a ramificação de feat
 >
 >git merge main
 
-Ou, você pode condensar isso em uma linha:
+Ou, utilizando os dois comandos em um da seguinte forma:
 
 >git merge feature main
 
