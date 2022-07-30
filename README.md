@@ -75,7 +75,7 @@ Considere o que acontece quando você começa a trabalhar em um novo recurso em 
     <img src="./img/1.png"  style="height:300px;" />
 </p>
 <br><br>
-A imagem ilustra em <h4 style="color:lightblue;">azul</h4> as atualizações da <h4 style="color:lightblue;">main</h4>, enquanto em <h4 style="color:lightgreen;">verde</h4> os commits de atualizações de <h4 style="color:lightgreen;">feature</h4>. Como a branch main é a branch que todos os desenvolvedores irão se basear, sempre antes de fazer um pull-request é importante  fazer um merge/rebase para garantir que a feature esta usando os códigos mais atuais da main.
+A imagem ilustra em <span style="color:lightblue;">azul</span> as atualizações da <span style="color:lightblue;">main</span>, enquanto em <span style="color:lightgreen;">verde</span> os commits de atualizações de <span style="color:lightgreen;">feature</span>. Como a branch main é a branch que todos os desenvolvedores irão se basear, sempre antes de fazer um pull-request é importante  fazer um merge/rebase para garantir que a feature esta usando os códigos mais atuais da main.
 
 <br>
 <h3><b>Merge</b></h3>
