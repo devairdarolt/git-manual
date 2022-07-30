@@ -69,7 +69,7 @@ Considere o que acontece quando você começa a trabalhar em um novo recurso em 
             <img src="./img/feature_1.png"  style="height:350px;" />
             <img src="./img/main_1.png" style="height:355px;" />
         </div>
-        <div style="width:875px; display:flex; justify-content:center; background:white; margin-top:50px;">
+        <div style="width:100%; display:flex; justify-content:center; background:white; margin-top:50px;">
             <img src="./img/1.png"  style="height:300px;" />
         </div>
     </div>
