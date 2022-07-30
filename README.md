@@ -70,9 +70,9 @@ Considere o que acontece quando você começa a trabalhar em um novo recurso em 
             <img src="./img/main_1.png" style="height:355px;" />
         </div>
     </div>
-    <div style="width:100%; display:flex; justify-content:center; background:white; margin-top:50px;">
-        <img src="./img/1.png"  style="height:300px;" />
-    </div>
+</p>
+<p align="center">
+    <img src="./img/1.png"  style="height:300px;" />
 </p>
 <br><br>
 A imagem ilustra em <span style="color:lightblue;">azul</span>, digamos que os novos commits em <b>main</b> são relevantes para o recurso em que você está trabalhando. Para incorporar os novos commits em seu <b>feature branch</b>, você tem duas opções: mesclar ou rebase.
