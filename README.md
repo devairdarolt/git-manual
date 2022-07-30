@@ -75,7 +75,7 @@ Considere o que acontece quando você começa a trabalhar em um novo recurso em 
     <img src="./img/1.png"  style="height:300px;" />
 </p>
 <br><br>
-A imagem ilustra em <span style="color:lightblue;">azul</span>, digamos que os novos commits em <b>main</b> são relevantes para o recurso em que você está trabalhando. Para incorporar os novos commits em seu <b>feature branch</b>, você tem duas opções: mesclar ou rebase.
+A imagem ilustra em <h3 style="color:lightblue;">azul</h3> as atualizações da <h3 style="color:lightblue;">main</h3>, enquanto em <h3 style="color:lightgreen;">verde</h3> os commits de atualizações de <h3 style="color:lightgreen;">feature</h3>.
 
 <br>
 <h3><b>Merge</b></h3>
