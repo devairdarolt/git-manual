@@ -64,7 +64,7 @@ Considere o que acontece quando você começa a trabalhar em um novo recurso em 
 
 <br><br>
 <p align="center">
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-between;  min-height: 600px; width:100%; flex-wrap: nowrap;" >
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-between; width:100%; flex-wrap: nowrap;" >
         <div style="display:flex; ">
             <img src="./img/feature_1.png"  style="height:350px;" />
             <img src="./img/main_1.png" style="height:355px;" />
