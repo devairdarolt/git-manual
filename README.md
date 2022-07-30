@@ -85,9 +85,8 @@ A imagem ilustra em <b style="color:#08b7f0;">azul</b> as atualizações da <spa
 <h3><b>Merge</b></h3>
 
 A opção mais fácil é o **merge** da branch main para a ramificação de feature usando algo como o seguinte:
-><code>git checkout feature</code>
->
-><code>git merge main</code>
+><code>git checkout feature</code><br>
+><code>git merge main</code><br>
 
 Ou, utilizando os dois comandos em um da seguinte forma:
 
@@ -112,9 +111,8 @@ Por outro lado, isso também significa que a feature branch terá um commit de m
 
 Como alternativa ao merge, você pode usar o **rebase** da branch feature  para **branch main** usando os seguintes comandos:
 
-><code>git checkout feature</code>
-
-><code>git rebase main</code>
+><code>git checkout feature</code><br>
+><code>git rebase main</code><br>
 
 Isso move toda a **branch feature**  para começar na ponta do **branch main**, incorporando efetivamente todos os novos commits em main. Mas, em vez de usar um commit de mesclagem, o rebase reescreve o histórico do projeto criando novos commits para cada commit no branch original. Dessa forma todos os commits da branch feature irão desaparecer e a branch main irá conter apenas o commit que adiciona a feature.
 
@@ -166,13 +164,10 @@ Fazendo a alteração do arquivo <code>commit-2f.txt</code> para <code>commit-2f
 
 <br><br>
 
-><code>mv commit-2f.txt commit-2ff.txt</code> -- Renomeia o arquivo
->
-><code>git add .</code> -- Marca para commit
->
-><code>git commit --amend -m "Commit 2ff</code> -- Sobrescreve o ultimo commit ( 2f )
->
-><code>git rebase --continue</code>  -- continua para o próximo da lista do rebase iterativo
+><code>mv commit-2f.txt commit-2ff.txt</code> -- Renomeia o arquivo<br>
+><code>git add .</code> -- Marca para commit<br>
+><code>git commit --amend -m "Commit 2ff</code> -- Sobrescreve o ultimo commit ( 2f )<br>
+><code>git rebase --continue</code>  -- continua para o próximo da lista do rebase iterativo<br>
 
 <br><br>
 
@@ -181,6 +176,6 @@ O resultado desse merge ficou conforme o desejado: Em amarelo o commit alterado,
 <br><br>
 
 <div style="display:flex; justify-content: center;">
-    <img src="./img/feature_iterativo_6.png"  style="height:580px;" />
+    <img src="./img/feature_iterativo_6.png"  style="height:480px;" />
 </div>
 <br>
