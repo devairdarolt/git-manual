@@ -90,10 +90,16 @@ Ou, utilizando os dois comandos em um da seguinte forma:
 
 >git merge feature main
 
-Isso cria um novo “commit de mesclagem” no featurebranch que une os históricos de ambas as ramificações, dando a você uma estrutura de ramificação parecida com esta:
-<p align="center">
+<br>
+Isso cria um novo “commit de mesclagem” tipo <code>Merge branch 'main' into feature</code> no feature que une os históricos de ambas as ramificações, dando a você uma estrutura de ramificação parecida com esta:
+
+<br>
+<div style="display:flex; align-items: flex-start; justify-content:space-between;">
     <img src="img/2.png" alt="`Linhas temporais`" style="zoom:100%;" />
-</p>
+    <img src="img/main_feature_1.png" alt="`Linhas temporais`" style="zoom:100%;" />
+</div>
+
+Assim, a branch feature irá portar os ultimos comites em azul em sua estruturação.
 Merge é bom porque é uma ação não destrutiva. As ramificações existentes não são alteradas de forma alguma. Isso evita todas as armadilhas potenciais do rebase (discutido abaixo).
 
 Por outro lado, isso também significa que a feature branch terá um commit de merge estranho toda vez que você precisar incorporar mudanças upstream. Se main é muito ativo, isso pode poluir um pouco o histórico do seu branch de recursos. Embora seja possível mitigar esse problema com recursos avançados **git log** opções, pode dificultar a compreensão da história do projeto por outros desenvolvedores.
