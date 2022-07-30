@@ -1,5 +1,22 @@
 # Uma introdução ao Git e ao GitHub
 
+<h4>Markdown</h4>
+
+<h5>Listas ordenadas</h5>
+Para criar uma lista ordenada, adicione itens de linha com números seguidos por pontos. Os números não precisam estar em ordem numérica, mas a lista deve começar com o número um.
+<p align="center">
+    <img src="img/4.png" alt="Linhas temporais" style="zoom:100%;" />
+</p>
+
+<h5>Listas não ordenadas</h5>
+Para criar uma lista não ordenada, adicione traços ( -), asteriscos ( *), ou sinais de adição ( +) na frente dos itens de linha. Recue um ou mais itens para criar uma lista aninhada.
+<p align="center">
+    <img src="img/5.png" alt="Linhas temporais" style="zoom:100%;" />
+</p>
+
+>**Iniciando itens de lista não ordenados com números**
+>Se você precisar iniciar um item de lista não ordenado com um número seguido por um ponto, você pode usar uma barra invertida ( \\) para escapar do período.
+
 Um tutorial passo a passo para o git e o GitHub.
 
 <h3>Etapa 1. Crie o repositório</h3>
@@ -18,7 +35,7 @@ Considere o que acontece quando você começa a trabalhar em um novo recurso em 
 </p>
 Agora, digamos que os novos commits em *main* são relevantes para o recurso em que você está trabalhando. Para incorporar os novos commits em seu **feature branch**, você tem duas opções: mesclar ou rebase.
 
-<h4>Merge</h4>
+<h4>Merge </h4>
 
 A opção mais fácil é o **merge** da branch main para a ramificação de feature usando algo como o seguinte:
 >git checkout feature
@@ -35,7 +52,7 @@ Merge é bom porque é uma ação não destrutiva. As ramificações existentes 
 
 Por outro lado, isso também significa que a feature branch terá um commit de merge estranho toda vez que você precisar incorporar mudanças upstream. Se main é muito ativo, isso pode poluir um pouco o histórico do seu branch de recursos. Embora seja possível mitigar esse problema com recursos avançados **git log** opções, pode dificultar a compreensão da história do projeto por outros desenvolvedores.
 
-<h4>Rebase</h4>
+<h4>Rebase </h4>
 
 Como alternativa ao merge, você pode usar o **rebase** da branch feature  para **main branch** usando os seguintes comandos:
 >git checkout feature
@@ -48,19 +65,30 @@ Isso move toda a **branch feature**  para começar na ponta do **main branch**, 
 
 O principal benefício do **rebase** é que você obtém um histórico de projeto muito mais limpo. Primeiro, ele elimina os commits de mesclagem desnecessários exigidos pelo git **merge**. Segundo, como você pode ver no diagrama acima, o **rebase** também resulta em um histórico de projeto perfeitamente linear - você pode seguir a dica de feature todo o caminho até o início do projeto sem quaisquer bifurcações. Isso facilita a navegação em seu projeto com comandos como **git log**, **git bisect**, e **gitk**.
 
-<h4>Markdown</h4>
+<h3>Rebase Iterativo</h3>
 
-<h5>Listas ordenadas</h5>
-Para criar uma lista ordenada, adicione itens de linha com números seguidos por pontos. Os números não precisam estar em ordem numérica, mas a lista deve começar com o número um.
+>Assim o log ficará da seguinte forma:
+
 <p align="center">
-    <img src="img/4.png" alt="Linhas temporais" style="zoom:100%;" />
+    <img src="img/9.png" alt="Linhas temporais" style="zoom:100%;" />
 </p>
 
-<h5>Listas não ordenadas</h5>
-Para criar uma lista não ordenada, adicione traços ( -), asteriscos ( *), ou sinais de adição ( +) na frente dos itens de linha. Recue um ou mais itens para criar uma lista aninhada.
+> Observando o status é possível ver sa próxima execução <code>pick xxxx commit 4</code> e <code>pick xxxx commit 5</code>
+
 <p align="center">
-    <img src="img/5.png" alt="Linhas temporais" style="zoom:100%;" />
+    <img src="img/10.png" alt="Linhas temporais" style="zoom:100%;" />
 </p>
 
->**Iniciando itens de lista não ordenados com números**
->Se você precisar iniciar um item de lista não ordenado com um número seguido por um ponto, você pode usar uma barra invertida ( \\) para escapar do período.
+>Após finalizar a alteração é possível realizar <code>git rebase --continue</code> para prosseguir com os próximos comandos.
+>
+><code>git rebase -i HEAD~2</code> Abre um arquivo para editar os ultimos dois commits da branch
+
+>Ao finalizar o log ficará da seguinte forma com o commit 3 alterado:
+
+<p align="center">
+    <img src="img/11.png" alt="Linhas temporais" style="zoom:100%;" />
+</p>
+
+> Essa alteração foi feita apenas na mensagem do commit mas poderia ser uma correção no próprio código
+
+<h3>Consolidando tudo em um único commit no topo da dev:</h3>
