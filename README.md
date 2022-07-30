@@ -85,23 +85,24 @@ A imagem ilustra em <b style="color:#08b7f0;">azul</b> as atualizações da <spa
 <h3><b>Merge</b></h3>
 
 A opção mais fácil é o **merge** da branch main para a ramificação de feature usando algo como o seguinte:
->git checkout feature
+><code>git checkout feature</code>
 >
->git merge main
+><code>git merge main</code>
 
 Ou, utilizando os dois comandos em um da seguinte forma:
 
->git merge feature main
+><code>git merge feature main</code>
 
 <br>
 Isso cria um novo “commit de mesclagem” tipo <code>Merge branch 'main' into feature</code> no feature que une os históricos de ambas as ramificações, dando a você uma estrutura de ramificação parecida com esta:
 
 <br>
 <div style="display:flex; align-items: flex-start; justify-content:space-between;">
-    <img src="img/2.png" alt="`Linhas temporais`" style="zoom:100%;" />
-    <img src="img/main_feature_1.png" alt="`Linhas temporais`" style="zoom:100%;" />
+    <img src="img/2.png" alt="`Linhas temporais`"  style="height:300px;" />
+    <img src="img/main_feature_1.png" alt="`Linhas temporais`"  style="height:600px;" />
 </div>
 
+<br><br>
 Assim, a branch feature irá portar os ultimos comites em azul em sua estruturação. O Merge é bom porque é uma ação não destrutiva. As ramificações existentes não são alteradas de forma alguma. Isso evita todas as armadilhas potenciais do rebase (discutido abaixo).
 
 Por outro lado, isso também significa que a feature branch terá um commit de merge estranho toda vez que você precisar incorporar mudanças upstream. Se main é muito ativo, isso pode poluir um pouco o histórico do seu branch de recursos. Embora seja possível mitigar esse problema com recursos avançados **git log** opções, pode dificultar a compreensão da história do projeto por outros desenvolvedores.
@@ -110,19 +111,23 @@ Por outro lado, isso também significa que a feature branch terá um commit de m
 <h2>Rebase </h2>
 
 Como alternativa ao merge, você pode usar o **rebase** da branch feature  para **branch main** usando os seguintes comandos:
->git checkout feature
 
->git rebase main
+><code>git checkout feature</code>
+
+><code>git rebase main</code>
 
 Isso move toda a **branch feature**  para começar na ponta do **branch main**, incorporando efetivamente todos os novos commits em main. Mas, em vez de usar um commit de mesclagem, o rebase reescreve o histórico do projeto criando novos commits para cada commit no branch original. Dessa forma todos os commits da branch feature irão desaparecer e a branch main irá conter apenas o commit que adiciona a feature.
 
 <br>
 
 <div style="display:flex; align-items: flex-start; justify-content:space-between;">
-    <img src="img/3.png" alt="`Linhas temporais`" style="zoom:100%;" />
-    <img src="img/main_feature_2.png" alt="`Linhas temporais`" style="zoom:100%;" />
+    <img src="img/3.png" alt="`Linhas temporais`" style="height:280px;" />
+    <img src="img/main_feature_2.png" alt="`Linhas temporais`" style="height:550px;" />
 </div>
 
+<br>
+
+<br>
 O principal benefício do **rebase** é que você obtém um histórico de projeto muito mais limpo. Primeiro, ele elimina os commits de mesclagem desnecessários exigidos pelo git **merge**. Segundo, como você pode ver no diagrama acima, o **rebase** também resulta em um histórico de projeto perfeitamente linear - você pode seguir a dica de feature todo o caminho até o início do projeto sem quaisquer bifurcações.
 
 <br>
@@ -135,8 +140,8 @@ Considerando o cenário da imagem da esquerda, iremos usar como base do rebase a
 ><code>git rebase -i main</code>
 
 <div style="display:flex; justify-content:space-between;">
-    <img src="./img/1.png"  style="height:400px;" />
-    <img src="./img/feature_iterativo_1.png"  style="height:400px;" />
+    <img src="./img/1.png"  style="height:250px;" />
+    <img src="./img/feature_iterativo_1.png"  style="height:320px;" />
 </div>
 
 <br>
