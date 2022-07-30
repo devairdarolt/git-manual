@@ -149,19 +149,21 @@ Considerando o cenário da imagem da esquerda, iremos usar como base do rebase a
 A figura mostra as opções para cada commit individual que está na feature, sendo que o topo são os commits mais antigos e no fim os mais recentes. Alterar a ordem das linhas altera a ordem dos commits
 
 <div style="display:flex; align-items: center;">
-    <img src="./img/feature_iterativo_3.png"  style="height:500px;" />
+    <img src="./img/feature_iterativo_3.png"  style="height:310px;" />
 </div>
 
 <br>
-Após salvar e fechar o arquivo, o git inicia o processo re rebase iterativo. Como o <b>Commit 2f</b> foi marcado para edição, o git ira pausar o processo nesse ponto para que a edição seja feita.
+Após salvar e fechar o arquivo, o git inicia o processo re rebase iterativo. Como o <code>Commit 2f</code> foi marcado para edição, o git ira pausar o processo nesse ponto para que a edição seja feita.
+
 <br><br>
 
-<div style="display:flex; align-items: center;">
-    <img src="./img/feature_iterativo_4.png"  style="height:180px;" />
+<div style="display:flex; justify-content: center;">
+    <img src="./img/feature_iterativo_4.png"  style="height:130px;" />
 </div>
 <br>
 
-Fazendo a alteração do arquivo commit-2f.txt para commit-2ff.txt basta marcar para <b>staged</b> e então fazer um <code>commit ammend</code> para sobrescrever o ultimo commit, que no caso é o <code>0ef75e9 Commit 2f</code>
+Fazendo a alteração do arquivo <code>commit-2f.txt</code> para <code>commit-2ff.txt</code> basta marcar para <code>staged</code> e então fazer um <code>commit ammend</code> para sobrescrever o ultimo commit, que no caso é o <code>0ef75e9 Commit 2f</code>
+
 <br><br>
 
 ><code>mv commit-2f.txt commit-2ff.txt</code> -- Renomeia o arquivo
@@ -171,12 +173,12 @@ Fazendo a alteração do arquivo commit-2f.txt para commit-2ff.txt basta marcar 
 ><code>git commit --amend -m "Commit 2ff</code> -- Sobrescreve o ultimo commit ( 2f )
 >
 ><code>git rebase --continue</code>  -- continua para o próximo da lista do rebase iterativo
+
 <br><br>
 
-\
-\
-O resultado desse merge ficou conforme o desejado: Em amarelo o commit alterado, em verde o commit conforme feito inicialmente, em azul os commits novos da <b>main</b> e em branco os commits que ja existiam na main quando a branch feature foi criada.
-<br><br><br>
+O resultado desse merge ficou conforme o desejado: Em amarelo o commit alterado, em verde o commit conforme feito inicialmente, em azul os commits novos da <code>main</code> e em branco os commits que ja existiam na main quando a branch feature foi criada.
+
+<br><br>
 
 <div style="display:flex; justify-content: center;">
     <img src="./img/feature_iterativo_6.png"  style="height:580px;" />
