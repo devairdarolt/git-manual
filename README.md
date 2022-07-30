@@ -32,24 +32,20 @@ Inicialmente, o repositório que você criar no Bitbucket ficará vazio sem nenh
 <h3><b>... Criando um repositório por linha de comando<b></h3>
 </br>
 
-><code><b>
->git init</br>
->git add README.md</br>
->git commit -m "first commit"</br>
->git branch -M master</br>
->git remote add origin <https://github.com/devairdarolt/repository-name.git></br>
->git push -u origin master</b></code></br>
+><code>git init</code></br>
+><code>git add README.md</code></br>
+><code>git commit -m "first commit"</code></br>
+><code>git branch -M master</code></br>
+><code>git remote add origin <https://github.com/devairdarolt/repository-name.git></code></br>
+><code>git push -u origin master</code></br>
 
 </br>
 <h3><b>… Enviar um repositório local para um repositório remoto<b></h3>
 </br>
 
-><code><b>
->git remote add origin <https://github.com/devairdarolt/devairdarolt.git>
->
->git branch -M master
->
->git push -u origin master</b></code>
+><code>git remote add origin <https://github.com/devairdarolt/devairdarolt.git></code><br>
+><code>git branch -M master<code><br>
+><code>git push -u origin master</code>
 
 </br>
 </br>
@@ -178,4 +174,5 @@ O resultado desse merge ficou conforme o desejado: Em amarelo o commit alterado,
 <div style="display:flex; justify-content: center;">
     <img src="./img/feature_iterativo_6.png"  style="height:480px;" />
 </div>
+
 <br>
