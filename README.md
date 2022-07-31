@@ -29,7 +29,7 @@ Para criar uma lista não ordenada, adicione traços ( -), asteriscos ( *), ou s
 Inicialmente, o repositório que você criar no Bitbucket ficará vazio sem nenhum código nele. Tudo bem porque você começará a adicionar alguns arquivos a ele em breve. Para apontar um novo repositório local para um repositório remoto basta fazer os segintes comandos:
 
 </br>
-<h3><b>... Criando um repositório por linha de comando<b></h3>
+<h3><b>... Criando um repositório por linha de comando</b></h3>
 </br>
 
 ><code>git init</code></br>
@@ -40,7 +40,7 @@ Inicialmente, o repositório que você criar no Bitbucket ficará vazio sem nenh
 ><code>git push -u origin master</code></br>
 
 </br>
-<h3><b>… Enviar um repositório local para um repositório remoto<b></h3>
+<h3><b>… Enviar um repositório local para um repositório remoto</b></h3>
 </br>
 
 ><code>git remote add origin <https://github.com/devairdarolt/devairdarolt.git></code><br>
