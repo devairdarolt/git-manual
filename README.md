@@ -9,14 +9,14 @@ Algumas referêcias para auxiliar na escrida do README
 </br>
 Para criar uma lista ordenada, adicione itens de linha com números seguidos por pontos. Os números não precisam estar em ordem numérica, mas a lista deve começar com o número um.
 <p align="center">
-    <img src="img/4.png" alt="Linhas temporais" style="zoom:100%;" />
+    <img src="img/4.png" alt="Linhas temporais" style="width:80%;" />
 </p>
 </br>
 <h3>Listas não ordenadas</h3>
 </br>
 Para criar uma lista não ordenada, adicione traços ( -), asteriscos ( *), ou sinais de adição ( +) na frente dos itens de linha. Recue um ou mais itens para criar uma lista aninhada.
 <p align="center">
-    <img src="img/5.png" alt="Linhas temporais" style="zoom:100%;" />
+    <img src="img/5.png" alt="Linhas temporais" style="width:80%;" />
 </p>
 
 >**Iniciando itens de lista não ordenados com números**
