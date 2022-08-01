@@ -1,5 +1,11 @@
 # Uma introdução ao Git e ao GitHub
 
+<h2>Comandos úteis</h2>
+
+<h3><b>Quando o <code>git status</code> mostrat todos os arquivos como unsteged</b></h3>
+
+><code>git config --global core.autocrlf true</code>
+
 <h2>Markdown</h2>
 Algumas referêcias para auxiliar na escrida do README
 </br>
