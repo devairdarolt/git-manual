@@ -2,9 +2,17 @@
 
 <h2>Comandos úteis</h2>
 
-<h3><b>Quando o <code>git status</code> mostrat todos os arquivos como unsteged</b></h3>
+<h4><b>Quando o <code>git status</code> mostrat todos os arquivos como unsteged</b></h4>
 
 ><code>git config --global core.autocrlf true</code>
+
+<h4>HTTPS to SSH</h4>
+
+><code>git remote set-url origin git@github.com:USERNAME/REPOSITORY.git</code>
+
+<h4>SSH to HTTPS</h4>
+
+><code>git remote set-url origin <https://github.com/USERNAME/REPOSITORY.git></code>
 
 <h2>Markdown</h2>
 Algumas referêcias para auxiliar na escrida do README
