@@ -6,9 +6,12 @@
 
 ><code>git config --global core.autocrlf true</code>
 
+Lembrar credenciais
+><code>git config --global credential.helper store</code>
+
 <h4>HTTPS to SSH</h4>
 
->git remote -v
+><code>git remote -v</code>
 
 ><code>git remote set-url origin git@github.com:USERNAME/REPOSITORY.git</code>
 
