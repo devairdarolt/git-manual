@@ -8,6 +8,8 @@
 
 <h4>HTTPS to SSH</h4>
 
+>git remote -v
+
 ><code>git remote set-url origin git@github.com:USERNAME/REPOSITORY.git</code>
 
 <h4>SSH to HTTPS</h4>
