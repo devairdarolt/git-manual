@@ -20,7 +20,7 @@ Lembrar credenciais
 ><code>git remote set-url origin <https://github.com/USERNAME/REPOSITORY.git></code>
 
 <h2>Markdown</h2>
-Algumas referêcias para auxiliar na escrida do README
+Algumas referêcias para auxiliar na escrita do README
 </br>
 </br>
 </br>
