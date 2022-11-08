@@ -6,10 +6,11 @@
 
 ><code>git config --global core.autocrlf true</code>
 
+><code>git config --global core.whitespace cr-at-eol</code>
+
 Lembrar credenciais
 ><code>git config --global credential.helper store</code>
 
-><code>git config --global core.whitespace cr-at-eol</code>
 <h4>HTTPS to SSH</h4>
 
 ><code>git remote -v</code>
